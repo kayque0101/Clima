@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../assets/climas-do-Brasil.jpg);
+    background-size: cover; /* Ajuste para cobrir toda a tela */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; /* Permite o empilhamento vertical */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.bar {
+    background-color: #2d62f5; /* Cor azul para as barras */
+    width: 100%; /* Largura total */
+    height: 50px; /* Altura das barras */
+    position: fixed; /* Fixa a posição */
+    left: 0; /* Alinha à esquerda */
+}
+
+.bar.top {
+    top: 0; /* Fixa na parte superior */
+}
+
+.bar.bottom {
+    bottom: 0; /* Fixa na parte inferior */
+}
+
+h2 {
+    color: rgb(255, 255, 255); /* Cor do texto do título */
+    margin: 20px 0; /* Espaço acima e abaixo do título */
+    text-align: center; /* Centraliza o texto */
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com 80% de opacidade */
+    width: 400px; /* Largura do quadrado */
+    height: 250px; /* Altura do quadrado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(240, 240, 240, 0.8); /* Borda com opacidade */
+    border-radius: 10px; /* Bordas arredondadas, opcional */
+    position: relative; /* Para que o container fique acima das barras */
+    z-index: 1; /* Garante que o contêiner esteja acima das barras */
+}
+
+.input-group {
+    display: flex; /* Alinha o input e o botão lado a lado */
+    width: 80%; /* Largura do grupo de input e botão */
+}
+
+input {
+    padding: 10px;
+    margin-right: 5px; /* Espaço entre o input e o botão */
+    flex: 1; /* Faz o input ocupar o espaço disponível */
+    min-width: 0; /* Evita que o input cresça muito */
+}
+
+button {
+    padding: 10px 15px; /* Tamanho do botão */
+    background-color: #2d62f5; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+button:hover {
+    background-color: #1c4cb5; /* Cor do botão ao passar o mouse */
+}
+
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.footer {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade */
+    width: 100%; /* Largura total */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0; /* Espaçamento interno */
+    position: relative; /* Para que fique na parte inferior da página */
+    bottom: 0; /* Fixa na parte inferior */
+}
+
+.footer p {
+    color: #2d62f5; /* Cor do texto */
+    margin: 0; /* Remove margens do parágrafo */
+    font-family: "Rubik Mono One", monospace; /* Fonte do texto */
+}
